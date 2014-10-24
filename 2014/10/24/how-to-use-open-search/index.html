@@ -6,38 +6,26 @@
   <title>使用Open Search快速搜索 | S&#39;Feng</title>
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Open Search是什么
+用户访问某个网站，如果该网站具备搜索功能，并提供遵循 OpenSearch 规范的代码，那么支持 OpenSearch 功能的浏览器就能够进行快捷搜索。 比如，Chrome 浏览器地址栏输入 github，再按 tab 键即可输入搜索内容。
 如何使用
 哪些网站支持
-下面列出来的是我目前知道正在使用的，欢迎大家给我留言你知道支持Open Search的网站进行补充。
-
-github.com
-gfsoso.com
-tinysou.com
-taobao.com">
+下面列出来的是我目前知道正在使用的，欢迎大家给我留言你知道支持Open Search的网站进行补充。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Open Search快速搜索">
 <meta property="og:url" content="http://blog.s-feng.com/2014/10/24/how-to-use-open-search/">
 <meta property="og:site_name" content="S'Feng">
 <meta property="og:description" content="Open Search是什么
+用户访问某个网站，如果该网站具备搜索功能，并提供遵循 OpenSearch 规范的代码，那么支持 OpenSearch 功能的浏览器就能够进行快捷搜索。 比如，Chrome 浏览器地址栏输入 github，再按 tab 键即可输入搜索内容。
 如何使用
 哪些网站支持
-下面列出来的是我目前知道正在使用的，欢迎大家给我留言你知道支持Open Search的网站进行补充。
-
-github.com
-gfsoso.com
-tinysou.com
-taobao.com">
+下面列出来的是我目前知道正在使用的，欢迎大家给我留言你知道支持Open Search的网站进行补充。">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Open Search快速搜索">
 <meta name="twitter:description" content="Open Search是什么
+用户访问某个网站，如果该网站具备搜索功能，并提供遵循 OpenSearch 规范的代码，那么支持 OpenSearch 功能的浏览器就能够进行快捷搜索。 比如，Chrome 浏览器地址栏输入 github，再按 tab 键即可输入搜索内容。
 如何使用
 哪些网站支持
-下面列出来的是我目前知道正在使用的，欢迎大家给我留言你知道支持Open Search的网站进行补充。
-
-github.com
-gfsoso.com
-tinysou.com
-taobao.com">
+下面列出来的是我目前知道正在使用的，欢迎大家给我留言你知道支持Open Search的网站进行补充。">
 
   
     <link rel="alternative" href="/atom.xml" title="S&#39;Feng" type="application/atom+xml">
@@ -97,16 +85,30 @@ taobao.com">
 	</header>
 	<div class="entry-content">
 		
-    	<h1 id="Open_Search是什么">Open Search是什么</h1>
-<h1 id="如何使用">如何使用</h1>
-<h1 id="哪些网站支持">哪些网站支持</h1>
+    	<h2 id="Open_Search是什么">Open Search是什么</h2>
+<p>用户访问某个网站，如果该网站具备搜索功能，并提供遵循 OpenSearch 规范的代码，那么支持 OpenSearch 功能的浏览器就能够进行快捷搜索。 比如，Chrome 浏览器地址栏输入 github，再按 tab 键即可输入搜索内容。</p>
+<h2 id="如何使用">如何使用</h2>
+<h2 id="哪些网站支持">哪些网站支持</h2>
 <p>下面列出来的是我目前知道正在使用的，欢迎大家给我留言你知道支持<code>Open Search</code>的网站进行补充。</p>
 <ul>
 <li>github.com</li>
 <li>gfsoso.com</li>
+<li>stackoverflow.com</li>
+<li>baidu.com</li>
+<li>sogou.com</li>
 <li>tinysou.com</li>
 <li>taobao.com</li>
 </ul>
+<h2 id="如何使你网站支持Open_Search">如何使你网站支持Open Search</h2>
+<h3 id="1-假设一个网站支持搜索，且搜索连接为">1.假设一个网站支持搜索，且搜索连接为</h3>
+<pre><code><span class="attribute">http://example.com/search.html?q</span>=<span class="string">beijing    </span>
+</code></pre><h3 id="2-添加Open_Search的配置描述文件opensearch-xml，并放到你的网站可访问的地方，如网站跟目录下">2.添加Open Search的配置描述文件opensearch.xml，并放到你的网站可访问的地方，如网站跟目录下</h3>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">OpenSearchDescription</span> <span class="attribute">xmlns</span>=<span class="value">"http://a9.com/-/spec/opensearch/1.1/"</span> <span class="attribute">xmlns:moz</span>=<span class="value">"http://www.mozilla.org/2006/browser/search/"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">ShortName</span>&gt;</span>Example<span class="tag">&lt;/<span class="title">ShortName</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">Description</span>&gt;</span>Search Example<span class="tag">&lt;/<span class="title">Description</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">InputEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="title">InputEncoding</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">Image</span> <span class="attribute">width</span>=<span class="value">"16"</span> <span class="attribute">height</span>=<span class="value">"16"</span> <span class="attribute">type</span>=<span class="value">"image/x-icon"</span>&gt;</span>https://example.com/favicon.ico<span class="tag">&lt;/<span class="title">Image</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">Url</span> <span class="attribute">type</span>=<span class="value">"text/html"</span> <span class="attribute">method</span>=<span class="value">"get"</span> <span class="attribute">template</span>=<span class="value">"https://example.com/search?q={searchTerms}&ref=opensearch"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">OpenSearchDescription</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<h3 id="3-在你网站的主页添加对该描述文件的引用">3.在你网站的主页添加对该描述文件的引用</h3>
+<p>在HTML的<code>head</code>标签中添加如下代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">type</span>=<span class="value">"application/opensearchdescription+xml"</span> <span class="attribute">href</span>=<span class="value">"/opensearch.xml"</span> <span class="attribute">title</span>=<span class="value">"example"</span>&gt;</span></div></pre></td></tr></table></figure>
+
 
     
 	</div>
