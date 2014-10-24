@@ -1,4 +1,4 @@
-title: construct gitlab with docker
+title: 使用docker快速搭建gitlab 
 date: 2014-10-19 14:54:38
-tags:
+tags: git, gitlab
 ---
