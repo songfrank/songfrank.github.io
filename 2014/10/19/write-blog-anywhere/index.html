@@ -25,7 +25,25 @@
 
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+  
+  <script>
+var option = {
+  engineKey: 'e1461df67bcf62339b41'
+};
+(function(w,d,t,u,n,s,e){
+  s = d.createElement(t);
+  s.src = u;
+  s.async = 1;
+  w[n] = function(r){
+    w[n].opts = r;
+  };
+  e = d.getElementsByTagName(t)[0];
+  e.parentNode.insertBefore(s, e);
+})(window,document,'script','//tinysou-cdn.b0.upaiyun.com/ts.js','_ts');
+_ts(option);
+</script>
 </head>
+
 <body>
   <div id="container">
     <div class="mobile-nav-panel">
@@ -43,9 +61,14 @@
 		</ul>
 	</nav>
 	<div id="search-form-wrap">
-		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://blog.s-feng.com"></form>
+<!--		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://blog.s-feng.com"></form> -->
+		<form class="search-form">
+			<input type='search' class='search-form-input' id='ts-search-input'>
+			<input type="submit" value="&#xF002" class="search-form-submit">
+		</form>
 	</div>
 </header>
+
     <div id="main">
       <article id="post-write-blog-anywhere" class="post">
 	<footer class="entry-meta-header">
@@ -127,10 +150,16 @@
 
     </div>
     <div class="mb-search">
+<!--
   <form action="//google.com/search" method="get" accept-charset="utf-8">
     <input type="search" name="q" results="0" placeholder="Search">
     <input type="hidden" name="q" value="site:blog.s-feng.com">
   </form>
+-->
+<form class="search-form">
+	<input type='search' class='search-form-input' id='ts-search-input'>
+	<input type="submit" value="&#xF002" class="search-form-submit">
+</form>
 </div>
 <footer id="footer">
 	<h1 class="footer-blog-title">
@@ -142,6 +171,7 @@
 		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
 	</span>
 </footer>
+
     
 <script>
   var disqus_shortname = 'blogsfengcom';

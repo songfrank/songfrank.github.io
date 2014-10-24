@@ -1,104 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[S'Feng]]></title>
   
-  <title>S&#39;Feng</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="S'Feng">
-<meta property="og:url" content="http://blog.s-feng.com/">
-<meta property="og:site_name" content="S'Feng">
-<meta property="og:description">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="S'Feng">
-<meta name="twitter:description">
-
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://blog.s-feng.com/"/>
+  <updated>2014-10-24T11:22:27.431Z</updated>
+  <id>http://blog.s-feng.com/</id>
   
-    <link rel="alternative" href="/atom.xml" title="S&#39;Feng" type="application/atom+xml">
+  <author>
+    <name><![CDATA[sfeng]]></name>
+    
+  </author>
   
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
-    <link rel="icon" href="/favicon.png">
-  
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-  
-  <script>
-var option = {
-  engineKey: 'e1461df67bcf62339b41'
-};
-(function(w,d,t,u,n,s,e){
-  s = d.createElement(t);
-  s.src = u;
-  s.async = 1;
-  w[n] = function(r){
-    w[n].opts = r;
-  };
-  e = d.getElementsByTagName(t)[0];
-  e.parentNode.insertBefore(s, e);
-})(window,document,'script','//tinysou-cdn.b0.upaiyun.com/ts.js','_ts');
-_ts(option);
-</script>
-</head>
-
-<body>
-  <div id="container">
-    <div class="mobile-nav-panel">
-	<i class="icon-reorder icon-large"></i>
-</div>
-<header id="header">
-	<h1 class="blog-title">
-		<a href="/">S&#39;Feng</a>
-	</h1>
-	<nav class="nav">
-		<ul>
-			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
-			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
-			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
-		</ul>
-	</nav>
-	<div id="search-form-wrap">
-<!--		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://blog.s-feng.com"></form> -->
-		<form class="search-form">
-			<input type='search' class='search-form-input' id='ts-search-input'>
-			<input type="submit" value="&#xF002" class="search-form-submit">
-		</form>
-	</div>
-</header>
-
-    <div id="main">
-      
-  
-    <article id="post-how-to-use-open-search" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2014/10/24/how-to-use-open-search/" class="article-date">
-  <time datetime="2014-10-24T00:32:34.000Z" itemprop="datePublished">Oct 24 2014</time>
-</a>
-		</span>
-		<span class="meta-elements author">sfeng</span>
-		<div class="commentscount">
-			
-				<a href="http://blog.s-feng.com/2014/10/24/how-to-use-open-search/#disqus_thread" class="article-comment-link">Comments</a>
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2014/10/24/how-to-use-open-search/">使用Open Search快速搜索</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	<h2 id="Open_Search是什么">Open Search是什么</h2>
+  <entry>
+    <title><![CDATA[使用Open Search快速搜索]]></title>
+    <link href="http://blog.s-feng.com/2014/10/24/how-to-use-open-search/"/>
+    <id>http://blog.s-feng.com/2014/10/24/how-to-use-open-search/</id>
+    <published>2014-10-24T00:32:34.000Z</published>
+    <updated>2014-10-24T03:49:09.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Open_Search是什么">Open Search是什么</h2>
 <p>用户访问某个网站，如果该网站具备搜索功能，并提供遵循 OpenSearch 规范的代码，那么支持 OpenSearch 功能的浏览器就能够进行快捷搜索。 比如，Chrome 浏览器地址栏输入 github，再按 tab 键即可输入搜索内容。</p>
 <h2 id="如何使用">如何使用</h2>
 <h2 id="哪些网站支持">哪些网站支持</h2>
@@ -122,205 +44,66 @@ _ts(option);
 <p>在HTML的<code>head</code>标签中添加如下代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">type</span>=<span class="value">"application/opensearchdescription+xml"</span> <span class="attribute">href</span>=<span class="value">"/opensearch.xml"</span> <span class="attribute">title</span>=<span class="value">"example"</span>&gt;</span></div></pre></td></tr></table></figure>
 
-
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Open_Search是什么">Open Search是什么</h2>
+<p>用户访问某个网站，如果该网站具备搜索功能，并提供遵循 OpenSearch 规范的代码，那么支持 OpenSearch 功能的浏览器就能够进行快捷搜索。 比如，Chrome 浏览器地址栏]]>
+    </summary>
     
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
+  </entry>
   
-    <article id="post-construct-gitlab-with-docker" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2014/10/19/construct-gitlab-with-docker/" class="article-date">
-  <time datetime="2014-10-19T06:54:38.000Z" itemprop="datePublished">Oct 19 2014</time>
-</a>
-		</span>
-		<span class="meta-elements author">sfeng</span>
-		<div class="commentscount">
-			
-				<a href="http://blog.s-feng.com/2014/10/19/construct-gitlab-with-docker/#disqus_thread" class="article-comment-link">Comments</a>
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2014/10/19/construct-gitlab-with-docker/">使用docker快速搭建gitlab</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	
+  <entry>
+    <title><![CDATA[使用docker快速搭建gitlab]]></title>
+    <link href="http://blog.s-feng.com/2014/10/19/construct-gitlab-with-docker/"/>
+    <id>http://blog.s-feng.com/2014/10/19/construct-gitlab-with-docker/</id>
+    <published>2014-10-19T06:54:38.000Z</published>
+    <updated>2014-10-24T00:47:47.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
     
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-			</span>
-			<span class="tags">
-				
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git-gitlab/">git, gitlab</a></li></ul>
-
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
-  
-    <article id="post-write-blog-anywhere" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2014/10/19/write-blog-anywhere/" class="article-date">
-  <time datetime="2014-10-19T06:53:42.000Z" itemprop="datePublished">Oct 19 2014</time>
-</a>
-		</span>
-		<span class="meta-elements author">sfeng</span>
-		<div class="commentscount">
-			
-				<a href="http://blog.s-feng.com/2014/10/19/write-blog-anywhere/#disqus_thread" class="article-comment-link">Comments</a>
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2014/10/19/write-blog-anywhere/">随时随地写blog</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	
+      <category term="git, gitlab" scheme="http://blog.s-feng.com/tags/git-gitlab/"/>
     
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-			</span>
-			<span class="tags">
-				
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/writing/">writing</a></li></ul>
-
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
+  </entry>
   
-    <article id="post-write-wiki-anywhere" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2014/10/19/write-wiki-anywhere/" class="article-date">
-  <time datetime="2014-10-19T06:53:18.000Z" itemprop="datePublished">Oct 19 2014</time>
-</a>
-		</span>
-		<span class="meta-elements author">sfeng</span>
-		<div class="commentscount">
-			
-				<a href="http://blog.s-feng.com/2014/10/19/write-wiki-anywhere/#disqus_thread" class="article-comment-link">Comments</a>
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2014/10/19/write-wiki-anywhere/">随时随地写wiki</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	
+  <entry>
+    <title><![CDATA[随时随地写blog]]></title>
+    <link href="http://blog.s-feng.com/2014/10/19/write-blog-anywhere/"/>
+    <id>http://blog.s-feng.com/2014/10/19/write-blog-anywhere/</id>
+    <published>2014-10-19T06:53:42.000Z</published>
+    <updated>2014-10-24T00:49:17.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
     
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-			</span>
-			<span class="tags">
-				
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/writing/">writing</a></li></ul>
-
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
+      <category term="writing" scheme="http://blog.s-feng.com/tags/writing/"/>
+    
+  </entry>
   
-    <article id="post-lldb-modify-variable-value" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2013/08/22/lldb-modify-variable-value/" class="article-date">
-  <time datetime="2013-08-21T16:28:00.000Z" itemprop="datePublished">Aug 22 2013</time>
-</a>
-		</span>
-		<span class="meta-elements author">sfeng</span>
-		<div class="commentscount">
-			
-				<a href="http://blog.s-feng.com/2013/08/22/lldb-modify-variable-value/#disqus_thread" class="article-comment-link">Comments</a>
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
+  <entry>
+    <title><![CDATA[随时随地写wiki]]></title>
+    <link href="http://blog.s-feng.com/2014/10/19/write-wiki-anywhere/"/>
+    <id>http://blog.s-feng.com/2014/10/19/write-wiki-anywhere/</id>
+    <published>2014-10-19T06:53:18.000Z</published>
+    <updated>2014-10-24T00:49:58.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+      <category term="writing" scheme="http://blog.s-feng.com/tags/writing/"/>
+    
+  </entry>
   
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2013/08/22/lldb-modify-variable-value/">XCode中使用lldb expr子命令改变变量的值</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	<h2 id="使用场景">使用场景</h2>
+  <entry>
+    <title><![CDATA[XCode中使用lldb expr子命令改变变量的值]]></title>
+    <link href="http://blog.s-feng.com/2013/08/22/lldb-modify-variable-value/"/>
+    <id>http://blog.s-feng.com/2013/08/22/lldb-modify-variable-value/</id>
+    <published>2013-08-21T16:28:00.000Z</published>
+    <updated>2014-10-22T06:07:30.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="使用场景">使用场景</h2>
 <p>当调试webview中处理跳转链接的问题时，需要对特定的url链接做native页面的跳转，我需要告诉后端工程师把连接改成我要的特定url后，然后我在xcode中加断点去调试。但是这样的方法很不效率，即浪费了他的时间，也可能会影响到线上的页面。那么我可以在我的代码里加一行将url的值改为我要调试的特定格式，这样也不太好，因为我要加一行调试代码，调试完后必须要删掉，如果忘了就完蛋了，或者不小心提交svn也会对别人造成影响。无奈，最后只能借助强大的调试工具LLDB。</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- (<span class="built_in">BOOL</span>)webView:(<span class="built_in">UIWebView</span> *)webView shouldStartLoadWithRequest:(<span class="built_in">NSURLRequest</span> *)request navigationType:    (UIWebViewNavigationType)navigationType</div><div class="line">{</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line"><span class="comment">// 判断是否是调转到AppStore</span></div><div class="line"></div><div class="line"><span class="built_in">NSURL</span>* url = request<span class="variable">.URL</span>;</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line">}</div></pre></td></tr></table></figure>
 
@@ -376,82 +159,16 @@ error: no known <span class="keyword">method</span> '+<span class="type">URLWith
 error: <span class="number">1</span> errors parsing expression
 </code></pre><p>你需要强制类型转换才能达到你的期望：</p>
 <pre><code>(lldb) expr url = (<span class="built_in">NSURL</span> *)[<span class="built_in">NSURL</span> URLWithString:<span class="string">@"www.example.com"</span>];
-</code></pre>
+</code></pre>]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="使用场景">使用场景</h2>
+<p>当调试webview中处理跳转链接的问题时，需要对特定的url链接做native页面的跳转，我需要告诉后端工程师把连接改成我要的特定url后，然后我在xcode中加断点去调试。但是这样的方法很不效率，即浪费了他的时间，也可能会]]>
+    </summary>
     
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/xcode/">xcode</a>»<a class="article-category-link" href="/categories/xcode/lldb/">lldb</a>
-  </div>
-
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
-  
-  
-
-    </div>
-    <div class="mb-search">
-<!--
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:blog.s-feng.com">
-  </form>
--->
-<form class="search-form">
-	<input type='search' class='search-form-input' id='ts-search-input'>
-	<input type="submit" value="&#xF002" class="search-form-submit">
-</form>
-</div>
-<footer id="footer">
-	<h1 class="footer-blog-title">
-		<a href="/">S&#39;Feng</a>
-	</h1>
-	<span class="copyright">
-		&copy; 2014 sfeng<br>
-		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
-		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-	</span>
-</footer>
-
+      <category term="xcode" scheme="http://blog.s-feng.com/categories/xcode/"/>
     
-<script>
-  var disqus_shortname = 'blogsfengcom';
+      <category term="lldb" scheme="http://blog.s-feng.com/categories/xcode/lldb/"/>
+    
+  </entry>
   
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//go.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
-
-<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js" type="text/javascript"></script>
-
-
-  </div>
-</body>
-</html>
+</feed>
