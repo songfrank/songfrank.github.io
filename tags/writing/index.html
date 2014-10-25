@@ -28,7 +28,8 @@
   
   <script>
 var option = {
-  engineKey: 'e1461df67bcf62339b41'
+  engineKey: 'e1461df67bcf62339b41',
+  searchInputElement:'.ts-searching-input'
 };
 (function(w,d,t,u,n,s,e){
   s = d.createElement(t);
@@ -63,7 +64,7 @@ _ts(option);
 	<div id="search-form-wrap">
 <!--		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://blog.s-feng.com"></form> -->
 		<form class="search-form">
-			<input type='search' class='search-form-input' id='ts-search-input'>
+			<input type='search' class='search-form-input ts-searching-input'>
 			<input type="submit" value="&#xF002" class="search-form-submit">
 		</form>
 	</div>
@@ -118,7 +119,7 @@ _ts(option);
   </form>
 -->
 <form >
-	<input type='search'  id='ts-search-input' placeholder="Search">
+	<input type='search'  class='ts-searching-input' placeholder="Search">
 </form>
 </div>
 <footer id="footer">
